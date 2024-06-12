@@ -9,8 +9,6 @@
             </field>
             <field name="sequence">7</field>
         </record>
-
-        <!-- Definición de grupos -->
         <record id="group_school_manager" model="res.groups">
             <field name="name">School Manager</field>
             <field name="category_id" ref="module_category_openrol_school" />
