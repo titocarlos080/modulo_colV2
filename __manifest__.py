@@ -17,8 +17,7 @@
     'version': '17.0.0.3',
     'depends': ['base','hr'],
     'data': [
-        'security/school_security.xml',
-        'security/ir.model.access.csv',
+     
         'data/school_data.xml',
         'data/medical_info_data.xml',
         'views/school_menu.xml',
@@ -41,6 +40,8 @@
         'views/batch_views.xml',
         'views/section_views.xml',
         'views/subject_views.xml',
+           'security/school_security.xml',
+        'security/ir.model.access.csv',
     ],
     'demo': [
         'demo/base_demo.xml',
