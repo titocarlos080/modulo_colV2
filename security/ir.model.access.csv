@@ -1,4 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_school_manager,access.school.manager,model_school_manager,de_school.group_school_manager,1,1,1,1
+access_school_user,access.school.user,model_school_user,de_school.group_school_user,1,0,0,0
 
 access_school_materia,access.school.materia,model_oe_school_materia,,1,0,0,0
 access_school_materia_user,access.school.materia.user,model_oe_school_materia,de_school.group_school_user,1,1,1,1
