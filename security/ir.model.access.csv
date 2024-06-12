@@ -1,7 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-
-
-
 access_school_year,access.school.year,model_oe_school_year,,1,0,0,0
 access_school_year_manager,access.school.year.manager,model_oe_school_year,de_school.group_school_manager,1,1,1,1
 
@@ -19,7 +16,6 @@ access_school_course_batch_user,access.school.course.batch.user,model_oe_school_
 
 access_school_course_section,access.school.course.section,model_oe_school_course_section,,1,0,0,0
 access_school_course_section_user,access.school.course.section.user,model_oe_school_course_section,de_school.group_school_user,1,1,1,1
-
 
 access_school_subject_group,access.school.subject.group,model_oe_school_subject_group,,1,0,0,0
 access_school_subject_group_user,access.school.subject.group.user,model_oe_school_subject_group,de_school.group_school_user,1,1,1,1
@@ -39,10 +35,8 @@ access_medical_type_user,access.medical.type.user,model_oe_school_medical_type,d
 access_student_medical,access.student.medical,model_oe_school_student_medical,,1,0,0,0
 access_student_medical_user,access.student.medical.user,model_oe_school_student_medical,de_school.group_school_user,1,1,1,1
 
-
 access_student_sibling,access.student.sibling,model_oe_student_sibling,,1,0,0,0
 access_student_sibling_user,access.student.sibling.user,model_oe_student_sibling,de_school.group_school_user,1,1,1,1
-
 
 access_school_building,access.school.building,model_oe_school_building,,1,0,0,0
 access_school_building_user,access.school.building.user,model_oe_school_building,de_school.group_school_user,1,1,1,1
@@ -73,4 +67,3 @@ access_school_notas_user,access.school.notas.user,model_oe_school_notas,de_schoo
 
 access_school_enrollment_user,access.school.enrollment.user,model_school_enrollment,group_school_user,1,0,0,0
 access_school_enrollment_manager,access.school.enrollment.manager,model_school_enrollment,group_school_manager,1,1,1,1
-
