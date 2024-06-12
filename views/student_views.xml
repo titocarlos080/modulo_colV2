@@ -4,7 +4,7 @@
         <record id="student_primary_form_view" model="ir.ui.view">
             <field name="name">student.form.view</field>
             <field name="model">res.partner</field>
-            <field name="inherit_id" ref="de_school.view_partner_form_inherit_student"/>
+            <field name="inherit_id" ref="view_partner_form_inherit_student"/>
             <field name="mode">primary</field>
             <field name="priority">999</field>
             <field name="arch" type="xml">
