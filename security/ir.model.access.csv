@@ -1,24 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
-access_school_materia,access.school.materia,model_oe_school_materia,,1,0,0,0
-access_school_materia_user,access.school.materia.user,model_oe_school_materia,de_school.group_school_user,1,1,1,1
-
-access_school_nivel,access.school.nivel,model_oe_school_nivel,,1,0,0,0
-access_school_nivel_user,access.school.nivel.user,model_oe_school_nivel,de_school.group_school_user,1,1,1,1
-
-access_school_inscripcion,access.school.inscripcion,model_oe_school_inscripcion,,1,0,0,0
-access_school_inscripcion_user,access.school.inscripcion.user,model_oe_school_inscripcion,de_school.group_school_user,1,1,1,1
-
-access_school_cursomateriaprofesoralumnos,access.school.cursomateriaprofesoralumnos,model_oe_school_cursomateriaprofesoralumnos,,1,0,0,0
-access_school_cursomateriaprofesoralumnos_user,access.school.cursomateriaprofesoralumnos.user,model_oe_school_cursomateriaprofesoralumnos,de_school.group_school_user,1,1,1,1
-
-access_school_notas,access.school.notas,model_oe_school_notas,,1,0,0,0
-access_school_notas_user,access.school.notas.user,model_oe_school_notas,de_school.group_school_user,1,1,1,1
-
-access_school_enrollment_user,access.school.enrollment.user,model_school_enrollment,group_school_user,1,0,0,0
-access_school_enrollment_manager,access.school.enrollment.manager,model_school_enrollment,group_school_manager,1,1,1,1
-
-
 access_school_year,access.school.year,model_oe_school_year,,1,0,0,0
 access_school_year_manager,access.school.year.manager,model_oe_school_year,de_school.group_school_manager,1,1,1,1
 
