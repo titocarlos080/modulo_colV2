@@ -8,7 +8,7 @@ class EstudianteController(http.Controller):
     def listar_estudiantes_por_padre(self, padre_id, **kwargs):
         try:
             # Buscar los estudiantes que tengan como padre o apoderado el ID proporcionado
-            estudiantes = request.env['res.partner'].sudo().search([('parent_id.id', '=', padre_id)])
+            estudiantes = request.env['res.partner'].sudo().search([('padre_id', '=', padre_id)])
             estudiantes_data = []
             for estudiante in estudiantes:
                 estudiante_data = {
@@ -127,6 +127,28 @@ class CursoController(http.Controller):
         
         
         
+        
+class NotificacionController(http.Controller):
+    
+    @http.route('/odoo/estudiante/comunicados', auth='public', methods=['GET'], csrf=False)
+    def obtener_lista_curso_materia(self, estudiante_id, **kwargs):
+        try:
+            comunicados = request.env['oe.school.comunicados'].sudo().search([])
+
+            comunicados_datas = []
+            for comunicado in comunicados:
+                 curso_data = {
+                    'id': comunicado.id,
+                    'name': comunicado.name,
+                    'descripcion': comunicado.descripcion,
+                     
+                }
+            comunicados_datas.append(curso_data)
+
+         # Devolver la respuesta JSON
+            return request.make_response(json.dumps(comunicados_datas), headers={'Content-Type': 'application/json'})
+        except Exception as e:
+            return request.make_response(json.dumps({'error': str(e)}), headers={'Content-Type': 'application/json'}, status=500)
         
         
         

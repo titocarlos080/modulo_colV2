@@ -29,3 +29,4 @@ class materia(models.Model):   # hereda de models.models
     # un nivel esta en muchas materias - la llave de nivel se va a materias
     nivel_id = fields.Many2one('oe.school.nivel', string='Nivel')
     
+

@@ -10,6 +10,17 @@ from odoo import api, fields, models, _
 from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 from odoo.exceptions import ValidationError, UserError
 from odoo.addons.base.models.res_partner import WARNING_MESSAGE, WARNING_HELP
+class ResPadre(models.Model):
+    _name = 'oe.school.padre'
+    
+    name = fields.Char(string='name', required=True)
+    
+    ci = fields.Integer(string='cedula')
+    
+    keynotificaciones = fields.Char(string='keynotificaciones', required=False)
+    
+    
+
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
@@ -19,7 +30,8 @@ class ResPartner(models.Model):
     keynotificaciones = fields.Char(string='keynotificaciones', required=False)
     
     rude =fields.Char(string='rude', required=False)
-    
+    padre_id = fields.Many2one('oe.school.padre', string='Padre')
+
     is_student = fields.Boolean('Is Student')
     is_parent_student = fields.Boolean('Is Parent Student', store=True, compute='_compute_parent')
     contact_type = fields.Selection([
